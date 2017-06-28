@@ -1,9 +1,8 @@
 body {
-  font-family: "Open Sans"; 
+  font-family: "Open Sans";
   margin: 0;
   padding: 0;
 }
-
 
 .wrapper {
   width: 100%;      max-width: 1180px;
@@ -50,13 +49,13 @@ header nav h2 {
 }
 
 header nav ul {
-  margin: 30px 0 0 0;
+  margin: 48px 0 0 0;
 }
 
 header nav li {
   float: left; /*--------------------float--------------------*/
   list-style-type: none;
-  margin: 0;              padding: 0 0px 7px 0px;
+  margin: 0;              padding: 0 0px 5px 0px;
 }
 
 header:after { /*---------------float cleared-----*/
@@ -80,7 +79,7 @@ header nav li a:hover {
 
 #phone-green-box a{
   color: #fff;      background-color: #95c51b;
-  font-size: 20px;  padding: 10px 0px 7px 15px;
+  font-size: 20px;  padding: 10px 0px 6px 15px;
 }
 
 #light-green-box {
@@ -125,12 +124,12 @@ header nav li a:hover {
 }
 
 #main p {
-  position: relative;   top: 65px;
+  position: relative;   top: 80px;
   font-size: 20px;      color: #333;
 }
 
 .margin-bottom {
-  margin-bottom: 118px;
+  margin-bottom: 135px;
 }
 
 /* End Main */
@@ -153,14 +152,14 @@ header nav li a:hover {
   width: 400px;
   color: #fff;
   position: relative;
-  top: 15px;
+  top: 35px;
 }
 
 #buy a {
   text-decoration: none;
   font-size: 20px;
   position: relative;
-  top: 25px;
+  top: 55px;
   color: black;
   font-weight: bold;
 }
