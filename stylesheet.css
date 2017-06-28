@@ -1,0 +1,106 @@
+body {
+  font-family: "Open Sans";
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1180px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+h1.logo {
+  background-image: url(img/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 60px;
+  width: 259px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  padding-bottom: 0;
+  text-indent: -10000px;
+  float: left; /*--------------------float--------------------*/
+}
+
+/* Start Header */
+
+header {
+
+  border-bottom: 1px solid #2a5c37;
+}
+
+header .top-info {
+  float: right; /*--------------------float--------------------*/
+}
+
+header .top-info ul {
+  color: #222;
+}
+
+header .top-info li{
+  float: left; /*--------------------float--------------------*/
+  list-style-type: none;
+}
+
+header nav {
+  float: right; /*--------------------float--------------------*/
+}
+
+header nav h2 {
+  text-indent: -10000px;
+  height: 0;
+  margin: 0;
+}
+header nav ul {
+  margin: 30px 0 0 0;
+}
+header nav li {
+  float: left; /*--------------------float--------------------*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0px 7px 0px;
+}
+
+header:after { /*---------------float cleared-----*/
+  content: "";
+  clear: both;
+  display: block;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: #2a5c37;
+  font-weight:normal;
+  font-size: 18px;
+  padding: 10px 15px 10px 15px;
+}
+
+header nav li a:hover {
+  color: #fff;
+  background-color: #2a5c37;
+}
+
+.active {
+  color: #fff;
+  background-color: #2a5c37;
+}
+
+#phone-green-box a{
+  color: #fff;
+  font-size: 20px;
+  background-color: #95c51b;
+  padding: 10px 0px 7px 15px;
+}
+
+#light-green-box {
+  float: right;
+  background-color: #95c51b;
+  height: 44px;
+  width: 10%;
+  position: absolute;
+  right: 0px;
+  top: 58px;
+  z-index: -1;
+}
+/* End Header */
