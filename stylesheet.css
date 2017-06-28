@@ -22,7 +22,6 @@ h1.logo {
 /* Start Header */
 
 header {
-
   border-bottom: 1px solid #2a5c37;
 }
 
@@ -40,14 +39,13 @@ header .top-info li{
 }
 
 header nav {
-  margin: 0;
-  padding: 0;
+  margin: 0;    padding: 0;
   background: white;
   float: right; /*--------------------float--------------------*/
 }
 
 header nav h2 {
-  text-indent: -10000px;  height: 0;
+  height: 0;  text-indent: -10000px;
   margin: 0;
 }
 
@@ -67,9 +65,9 @@ header:after { /*---------------float cleared-----*/
 }
 
 header nav li a {
-  text-decoration: none;        color: #111;
-  font-weight: normal;          font-size: 18px;
-  padding: 10px 15px 10px 15px;
+  text-decoration: none;    padding: 10px 15px 10px 15px;
+  font-weight: normal;      font-size: 18px;
+  color: #111;
 }
 
 header nav li a:hover {
@@ -115,7 +113,25 @@ header nav li a:hover {
 
 /* Start Main */
 
+#main h1 {
+  font-size: 36px;  color: #333;
+  display: inline;  position: relative;
+  top: 50px;
+}
 
+.float-right {
+  float: right;     position: relative;
+  display: inline;
+}
+
+#main p {
+  position: relative;   top: 65px;
+  font-size: 20px;      color: #333;
+}
+
+.margin-bottom {
+  margin-bottom: 115px;
+}
 
 /* End Main */
 
