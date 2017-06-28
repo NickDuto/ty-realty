@@ -130,9 +130,51 @@ header nav li a:hover {
 }
 
 .margin-bottom {
-  margin-bottom: 115px;
+  margin-bottom: 118px;
 }
 
 /* End Main */
+
+/* Start Buy-and-Sell */
+
+#buy {
+  background: #95c51b;
+  height: 375px;
+}
+
+#buy h1 {
+  padding-top: 60px;
+  font-size: 36px;
+  color: white;
+}
+
+#buy p {
+  font-size: 20px;
+  width: 400px;
+  color: #fff;
+  position: relative;
+  top: 15px;
+}
+
+#buy a {
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+  top: 25px;
+  color: black;
+  font-weight: bold;
+}
+
+#buy-pic {
+  position: relative;
+  top: -375px;
+  max-width: 50%;
+  background-image: url(img/1.jpg);  background-repeat: no-repeat;
+  background-size: cover;
+  height: 375px;
+  left:50%;
+}
+
+/* End Buy-and-Sell */
 
 /* Media Queries (Add one for light-green-box --display none when screen size < 1180px)*/
