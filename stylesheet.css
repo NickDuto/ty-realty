@@ -1,9 +1,7 @@
 body {
   font-family: "Open Sans";
-  margin: 0;
-  padding: 0;
+  margin: 0;        padding: 0;
 }
-
 
 .wrapper {
   width: 100%;      max-width: 1180px;
@@ -30,12 +28,15 @@ header .top-info {
 }
 
 header .top-info ul {
-  color: #222;
+  color: #444;
+  font-size: 16px;
 }
 
 header .top-info li{
   float: left; /*--------------------float--------------------*/
   list-style-type: none;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 
 header nav {
@@ -50,13 +51,13 @@ header nav h2 {
 }
 
 header nav ul {
-  margin: 30px 0 0 0;
+  margin: 28px 0 0 0;
 }
 
 header nav li {
   float: left; /*--------------------float--------------------*/
   list-style-type: none;
-  margin: 0;              padding: 0 0px 7px 0px;
+  margin: 0;              padding: 0 0px 5px 0px;
 }
 
 header:after { /*---------------float cleared-----*/
@@ -80,14 +81,25 @@ header nav li a:hover {
 
 #phone-green-box a{
   color: #fff;      background-color: #95c51b;
-  font-size: 20px;  padding: 10px 0px 7px 15px;
+  font-size: 20px;  padding: 10px 0px 6px 10px;
+}
+
+.phone-icon {
+  font-size: 20px;  background: #95c51b;
+  color: #fff;      padding: 10px 10px 6px 10px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.phone-icon:hover {
+  background: #95c51b;
 }
 
 #light-green-box {
   float: right;       background-color: #95c51b;
   height: 44px;       width: 50%;
   position: absolute; right: 0px;
-  top: 58px;          z-index: -1;
+  top: 50px;          z-index: -1;
 }
 /* End Header */
 
@@ -121,16 +133,45 @@ header nav li a:hover {
 
 .float-right {
   float: right;     position: relative;
-  display: inline;
+  display: inline;  top: -108px;
+}
+
+
+#main img {
+  width: 80px;
+  height: 70px;
+}
+
+#main .button {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#main a {
+  color: #444;
+}
+
+#main a:hover {
+  color: #888;
+}
+
+#main .button.call {
+  width: 72px;
+}
+
+#main .button.fb {
+  width: 90px;
 }
 
 #main p {
-  position: relative;   top: 65px;
+  position: relative;   top: 80px;
   font-size: 20px;      color: #333;
 }
 
 .margin-bottom {
-  margin-bottom: 118px;
+  margin-bottom: 135px;
 }
 
 /* End Main */
@@ -153,14 +194,14 @@ header nav li a:hover {
   width: 400px;
   color: #fff;
   position: relative;
-  top: 15px;
+  top: 35px;
 }
 
 #buy a {
   text-decoration: none;
   font-size: 20px;
   position: relative;
-  top: 25px;
+  top: 55px;
   color: black;
   font-weight: bold;
 }
