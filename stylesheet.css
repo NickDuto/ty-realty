@@ -1,11 +1,11 @@
 body {
   font-family: "Open Sans";
-  margin: 0;        padding: 0;
+  margin: 0;              padding: 0;
 }
 
 .wrapper {
-  width: 100%;      max-width: 1180px;
-  padding: 0 10px;  margin: 0 auto;
+  width: 100%;            max-width: 1180px;
+  padding: 0 10px;        margin: 0 auto;
 }
 
 h1.logo {
@@ -14,7 +14,7 @@ h1.logo {
   width: 259px;                         margin-top: 30px;
   margin-bottom: 0px;                   padding-bottom: 0;
   text-indent: -10000px;
-  float: left; /*--------------------float--------------------*/
+  float: left;
 }
 
 /* Start Header */
@@ -24,29 +24,26 @@ header {
 }
 
 header .top-info {
-  float: right; /*--------------------float--------------------*/
+  float: right;
 }
 
 header .top-info ul {
-  color: #444;
-  font-size: 16px;
+  color: #444;            font-size: 16px;
 }
 
 header .top-info li{
-  float: left; /*--------------------float--------------------*/
-  list-style-type: none;
-  padding-top: 10px;
-  padding-left: 20px;
+  float: left;            list-style-type: none;
+  padding-top: 10px;      padding-left: 20px;
 }
 
 header nav {
-  margin: 0;    padding: 0;
+  margin: 0;              padding: 0;
   background: white;
-  float: right; /*--------------------float--------------------*/
+  float: right;
 }
 
 header nav h2 {
-  height: 0;  text-indent: -10000px;
+  height: 0;              text-indent: -10000px;
   margin: 0;
 }
 
@@ -55,38 +52,38 @@ header nav ul {
 }
 
 header nav li {
-  float: left; /*--------------------float--------------------*/
+  float: left;
   list-style-type: none;
   margin: 0;              padding: 0 0px 5px 0px;
 }
 
 header:after { /*---------------float cleared-----*/
-  content: "";    clear: both;
+  content: "";            clear: both;
   display: block;
 }
 
 header nav li a {
-  text-decoration: none;    padding: 10px 15px 10px 15px;
-  font-weight: normal;      font-size: 18px;
+  text-decoration: none;  padding: 10px 15px 10px 15px;
+  font-weight: normal;    font-size: 18px;
   color: #111;
 }
 
 header nav li a:hover {
-  color: #fff;  background-color: #2a5c37;
+  color: #fff;            background-color: #2a5c37;
 }
 
 .menu-active {
-  color: #fff;  background-color: #2a5c37;
+  color: #fff;            background-color: #2a5c37;
 }
 
 #phone-green-box a{
-  color: #fff;      background-color: #95c51b;
-  font-size: 20px;  padding: 10px 0px 6px 10px;
+  color: #fff;            background-color: #95c51b;
+  font-size: 20px;        padding: 10px 0px 6px 10px;
 }
 
 .phone-icon {
-  font-size: 20px;  background: #95c51b;
-  color: #fff;      padding: 10px 10px 6px 10px;
+  font-size: 20px;        background: #95c51b;
+  color: #fff;            padding: 10px 10px 6px 10px;
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
 }
@@ -96,28 +93,28 @@ header nav li a:hover {
 }
 
 #light-green-box {
-  float: right;       background-color: #95c51b;
-  height: 44px;       width: 50%;
-  position: absolute; right: 0px;
-  top: 50px;          z-index: -1;
+  float: right;           background-color: #95c51b;
+  height: 44px;           width: 50%;
+  position: absolute;     right: 0px;
+  top: 50px;              z-index: -1;
 }
 /* End Header */
 
 /* Start Slider 1 */
 
 #slider-1 {
-  width: 100%;  background: #46995c;
+  width: 100%;            background: #46995c;
 }
 
 #slider-1 h2 {
-  margin: 0;          padding: 0 0 15px 0;
-  text-align: center; color: white;
-  font-size: 16px;    font-weight: normal;
+  margin: 0;              padding: 0 0 15px 0;
+  text-align: center;     color: white;
+  font-size: 16px;        font-weight: normal;
 }
 
 #scenery-carousel {
-  position: relative; top: 50px;
-  background: #eee;   height: 400px;
+  position: relative;     top: 50px;
+  background: #eee;       height: 400px;
   margin-bottom: 65px;
 }
 
@@ -126,48 +123,33 @@ header nav li a:hover {
 /* Start Main */
 
 #main h1 {
-  font-size: 36px;  color: #333;
-  display: inline;  position: relative;
+  font-size: 36px;        color: #333;
+  display: inline;        position: relative;
   top: 50px;
 }
 
 .float-right {
-  float: right;     position: relative;
-  display: inline;  top: -108px;
+  float: right;           position: relative;
+  display: inline;        top: -108px;
 }
 
-
 #main img {
-  width: 80px;
-  height: 70px;
+  width: 80px;            height: 70px;
 }
 
 #main .button {
-  font-size: 16px;
-  font-weight: bold;
-  margin-left: 10px;
-  margin-top: 10px;
+  font-size: 16px;        font-weight: bold;
+  padding-left: 10px;      margin-top: 10px;
 }
 
-#main a {
-  color: #444;
-}
-
-#main a:hover {
-  color: #888;
-}
-
-#main .button.call {
-  width: 72px;
-}
-
-#main .button.fb {
-  width: 90px;
-}
+#main a {color: #444;}
+#main a:hover {color: #888;}
+#main .button.call {width: 82px;}
+#main .button.fb {width: 100px;}
 
 #main p {
-  position: relative;   top: 80px;
-  font-size: 20px;      color: #333;
+  position: relative;     top: 80px;
+  font-size: 20px;        color: #333;
 }
 
 .margin-bottom {
@@ -179,43 +161,92 @@ header nav li a:hover {
 /* Start Buy-and-Sell */
 
 #buy {
-  background: #95c51b;
-  height: 375px;
+  background: #95c51b;    height: 375px;
 }
 
 #buy h1 {
-  padding-top: 60px;
-  font-size: 36px;
+  padding-top: 60px;      font-size: 36px;
   color: white;
 }
 
 #buy p {
-  font-size: 20px;
-  width: 400px;
-  color: #fff;
-  position: relative;
+  font-size: 20px;        width: 400px;
+  color: #fff;            position: relative;
   top: 35px;
 }
 
 #buy a {
-  text-decoration: none;
-  font-size: 20px;
-  position: relative;
-  top: 55px;
-  color: black;
-  font-weight: bold;
+  text-decoration: none;  font-weight: bold;
+  font-size: 20px;        position: relative;
+  top: 55px;              color: black;
+}
+
+#buy a:hover {
+  color: #888;
 }
 
 #buy-pic {
+  position: relative;     background-image: url(img/1.jpg);
+  max-width: 50%;         background-repeat: no-repeat;
+  top: -375px;            background-size: cover;
+  height: 375px;          left:50%;
+}
+
+#sell-pic {
+  position: relative;     background-image: url(img/2.jpg);
+  max-width: 50%;         background-repeat: no-repeat;
+  top: -375px;            background-size: cover;
+  height: 375px;          z-index: 2;
+}
+
+#sell {
+  background: #aaa;    height: 375px;
+  position: relative;  top: -750px;
+}
+
+#sell-container {
   position: relative;
-  top: -375px;
-  max-width: 50%;
-  background-image: url(img/1.jpg);  background-repeat: no-repeat;
-  background-size: cover;
-  height: 375px;
-  left:50%;
+  float: right;
+
+}
+
+#sell h1 {
+  padding-top: 40px;      font-size: 36px;
+  color: white;           position: relative;
+
+}
+
+#sell p {
+  font-size: 20px;        width: 400px;
+  color: #fff;            position: relative;
+  top: 35px;
+}
+
+#sell a {
+  text-decoration: none;  font-weight: bold;
+  font-size: 20px;        position: relative;
+  top: 55px;              color: 	#111;
+}
+
+#sell a:hover {
+  color: #888;
 }
 
 /* End Buy-and-Sell */
+
+
+/* Start Slider-2 */
+
+#slider-2 {
+
+}
+
+#slider-2 h1 {
+
+}
+
+#slider-2.carousel
+
+/* End Slider-2 */
 
 /* Media Queries (Add one for light-green-box --display none when screen size < 1180px)*/
