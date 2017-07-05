@@ -1,7 +1,6 @@
 body {
   font-family: "Open Sans";
-  margin: 0;
-  padding: 0;
+  margin: 0;        padding: 0;
 }
 
 .wrapper {
@@ -29,12 +28,15 @@ header .top-info {
 }
 
 header .top-info ul {
-  color: #222;
+  color: #444;
+  font-size: 16px;
 }
 
 header .top-info li{
   float: left; /*--------------------float--------------------*/
   list-style-type: none;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 
 header nav {
@@ -49,7 +51,7 @@ header nav h2 {
 }
 
 header nav ul {
-  margin: 48px 0 0 0;
+  margin: 28px 0 0 0;
 }
 
 header nav li {
@@ -79,14 +81,25 @@ header nav li a:hover {
 
 #phone-green-box a{
   color: #fff;      background-color: #95c51b;
-  font-size: 20px;  padding: 10px 0px 6px 15px;
+  font-size: 20px;  padding: 10px 0px 6px 10px;
+}
+
+.phone-icon {
+  font-size: 20px;  background: #95c51b;
+  color: #fff;      padding: 10px 10px 6px 10px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.phone-icon:hover {
+  background: #95c51b;
 }
 
 #light-green-box {
   float: right;       background-color: #95c51b;
   height: 44px;       width: 50%;
   position: absolute; right: 0px;
-  top: 58px;          z-index: -1;
+  top: 50px;          z-index: -1;
 }
 /* End Header */
 
