@@ -238,15 +238,106 @@ header nav li a:hover {
 /* Start Slider-2 */
 
 #slider-2 {
-
+  position: relative;
+  top: -717px;
 }
 
 #slider-2 h1 {
-
+  text-align: center;
 }
 
-#slider-2.carousel
+#slider-2 .carousel {
+  border: 1px solid #111;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  top: 43px;
+  background: #eee;
+}
 
 /* End Slider-2 */
+
+/* Start Footer */
+
+footer {
+
+  position: relative;
+  background: #111111;
+  padding-top: 40px;
+}
+
+#headings {
+  background: #222;
+  height: 80px;
+}
+
+footer:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer h1 {
+  color: #95c51b;
+  font-size: 24px;
+  display: inline;
+  float: left;
+  width: 23%;
+  margin-right: 2%;
+  position: relative;
+  top: 8px;
+}
+
+
+footer h1:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer ul {
+  margin-top: 37px;
+  float:left;
+  padding: 0;
+  list-style-type:none;
+  color: #fff;
+  width: 23%;
+  margin-right: 2%;
+  font-size: 18px;
+}
+
+footer li {
+  margin-bottom: 7px;
+}
+
+.margin-bottom-zero {
+  margin-bottom: 0;
+}
+
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #888;
+}
+
+footer #site-links:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer #copyright {
+  margin-top: 27px;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  background: black;
+  padding: 15px 0;
+}
+
+/* End Footer */
 
 /* Media Queries (Add one for light-green-box --display none when screen size < 1180px)*/
