@@ -238,8 +238,9 @@ header nav li a:hover {
 /* Start Slider-2 */
 
 #slider-2 {
-  position: relative;
-  top: -717px;
+  position: absolute;
+  width: 100%;
+  top: 1670px;
 }
 
 #slider-2 h1 {
@@ -260,7 +261,7 @@ header nav li a:hover {
 /* Start Footer */
 
 footer {
-
+  margin-top: 60px;
   position: relative;
   background: #111111;
   padding-top: 40px;
@@ -288,7 +289,6 @@ footer h1 {
   top: 8px;
 }
 
-
 footer h1:after {
   content: "";
   display: block;
@@ -313,7 +313,6 @@ footer li {
 .margin-bottom-zero {
   margin-bottom: 0;
 }
-
 
 footer a {
   color: #fff;
