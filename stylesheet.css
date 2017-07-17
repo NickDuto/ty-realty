@@ -92,7 +92,7 @@ header nav li a:hover {
   background: #95c51b;
 }
 
-/**/
+
 #light-green-box {
   padding: 0;             margin: 0;
   float: right;           background-color: #95c51b;
@@ -340,5 +340,16 @@ footer #copyright {
 }
 
 /* End Footer */
+
+/* Start Listings CSS */
+
+#map {
+  background-image: url(img/map.png);  background-repeat: no-repeat;
+  background-size: cover;             height: 540px;
+  width: 100%;
+  background-position: center;
+}
+
+/* End Listings CSS */
 
 /* Media Queries (Add one for light-green-box --display none when screen size < 1180px)*/
