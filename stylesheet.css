@@ -350,6 +350,32 @@ footer #copyright {
   background-position: center;
 }
 
+.listing h2 {
+  font-size: 22px;
+  color: #111;
+}
+
+.listing p {
+  font-size: 18px;
+  color: #666;
+}
+
+.listing .price {
+  font-size: 22px;
+  color: #2a5c37;
+  font-weight: bold;
+}
+
+.listing .image {
+  height: 215px;
+  width: 300px;
+}
+
+#img-1 {
+  background-image: url(img/house1.jpg);  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* End Listings CSS */
 
 /* Media Queries (Add one for light-green-box --display none when screen size < 1180px)*/
