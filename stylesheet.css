@@ -350,14 +350,23 @@ footer #copyright {
   background-position: center;
 }
 
+.listing {
+  border: 1px solid #2a5c37;
+  border-radius: 0 3px 3px 0;
+  margin-bottom: 30px;
+}
+
 .listing h2 {
+  max-width: 290px;
   font-size: 22px;
   color: #111;
+  font-weight: bold;
 }
 
 .listing p {
   font-size: 18px;
   color: #666;
+  width: 100%;
 }
 
 .listing .price {
@@ -367,12 +376,96 @@ footer #copyright {
 }
 
 .listing .image {
-  height: 215px;
-  width: 300px;
+  border-right: 1px solid #2a5c37;
+  height: 255px;
+  width: 30%;
+  position: relative;
+  float: left; /*------------FLOAT-------------*/
+}
+
+.listing .intro {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  width: 70%;
+  position: relative;
+  float: left; /*------------FLOAT-------------*/
+}
+
+.listing .icons {
+  margin-left: 2px;
+  padding-top: 15px;
+}
+
+.icons .info {
+  position: relative;
+  float: left; /*-------------FLOAT----------*/
+  padding-left: 2px;
+  padding-right: 5px;
+}
+
+.listing .icon {
+  position: relative;
+  float: left;
+
+}
+
+.icons .img {
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-indent: -10000px;
+  position: relative;
+  float: left; /*-------------FLOAT----------*/
+}
+
+.bed-img {
+  background-image: url(img/bed.png);
+  height: 20px;
+  width: 20px;
+}
+
+.bath-img {
+  background-image: url(img/bath.png);
+  height: 100%;
+  width: 25px;
+  margin-top: 4px;
+}
+
+.area-img {
+  background-image: url(img/area.png);
+  height: 100%;
+  width: 24px;
+}
+
+.listing button {
+  position: relative;
+  float: right;
+}
+
+
+
+.listing:after { /*---------------float cleared-----*/
+  content: "";            clear: both;
+  display: block;
 }
 
 #img-1 {
   background-image: url(img/house1.jpg);  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#img-2 {
+  background-image: url(img/house2.jpg);  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#img-3 {
+  background-image: url(img/house3.jpg);  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#img-4 {
+  background-image: url(img/house4.jpg);  background-repeat: no-repeat;
   background-size: cover;
 }
 
