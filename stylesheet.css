@@ -123,352 +123,389 @@ header nav li a:hover {
 /* End Slider-1 */
 
 /* Start Main */
-
-#main h1 {
-  font-size: 36px;        color: #333;
-  display: inline;        position: relative;
-  top: 50px;
-}
-
-.float-right {
-  float: right;           position: relative;
-  display: inline;        top: -108px;
-}
-
-#main img {
-  width: 80px;            height: 70px;
-}
-
-#main .button {
-  font-size: 16px;        font-weight: bold;
-  padding-left: 10px;      margin-top: 10px;
-}
-
-#main a {color: #444;}
-#main a:hover {color: #888;}
-#main .button.call {width: 82px;}
-#main .button.fb {width: 100px;}
-
-#main p {
-  position: relative;     top: 80px;
-  font-size: 20px;        color: #333;
-}
-
-.margin-bottom {
-  margin-bottom: 135px;
-}
-
+  #main h1 {
+    font-size: 36px;        color: #333;
+    display: inline;        position: relative;
+    top: 50px;
+  }
+  .float-right {
+    float: right;           position: relative;
+    display: inline;        top: -108px;
+  }
+  #main img {
+    width: 80px;            height: 70px;
+  }
+  #main .button {
+    font-size: 16px;        font-weight: bold;
+    padding-left: 10px;      margin-top: 10px;
+  }
+  #main a {color: #444;}
+  #main a:hover {color: #888;}
+  #main .button.call {width: 82px;}
+  #main .button.fb {width: 100px;}
+  #main p {
+    position: relative;     top: 80px;
+    font-size: 20px;        color: #333;
+  }
+  .margin-bottom {
+    margin-bottom: 135px;
+  }
 /* End Main */
 
 /* Start Buy-and-Sell */
+  #buy {
+    background: #95c51b;    height: 375px;
+  }
+  #buy h1 {
+    padding-top: 60px;      font-size: 36px;
+    color: white;
+  }
+  #buy p {
+    font-size: 20px;        width: 400px;
+    color: #fff;            position: relative;
+    top: 35px;
+  }
+  #buy a {
+    text-decoration: none;  font-weight: bold;
+    font-size: 20px;        position: relative;
+    top: 55px;              color: black;
+  }
+  #buy a:hover {
+    color: #404040;
+    text-decoration: underline;
+  }
+  #buy-pic {
+    position: relative;     background-image: url(img/1.jpg);
+    max-width: 50%;         background-repeat: no-repeat;
+    top: -375px;            background-size: cover;
+    height: 375px;          left:50%;
+  }
+  #sell-pic {
+    position: relative;     background-image: url(img/2.jpg);
+    max-width: 50%;         background-repeat: no-repeat;
+    top: -375px;            background-size: cover;
+    height: 375px;          z-index: 2;
+  }
+  #sell {
+    background: #aaa;    height: 375px;
+    position: relative;  top: -750px;
+  }
+  #sell-container {
+    position: relative;
+    float: right;
 
-#buy {
-  background: #95c51b;    height: 375px;
-}
+  }
+  #sell h1 {
+    padding-top: 40px;      font-size: 36px;
+    color: white;           position: relative;
 
-#buy h1 {
-  padding-top: 60px;      font-size: 36px;
-  color: white;
-}
-
-#buy p {
-  font-size: 20px;        width: 400px;
-  color: #fff;            position: relative;
-  top: 35px;
-}
-
-#buy a {
-  text-decoration: none;  font-weight: bold;
-  font-size: 20px;        position: relative;
-  top: 55px;              color: black;
-}
-
-#buy a:hover {
-  color: #888;
-}
-
-#buy-pic {
-  position: relative;     background-image: url(img/1.jpg);
-  max-width: 50%;         background-repeat: no-repeat;
-  top: -375px;            background-size: cover;
-  height: 375px;          left:50%;
-}
-
-#sell-pic {
-  position: relative;     background-image: url(img/2.jpg);
-  max-width: 50%;         background-repeat: no-repeat;
-  top: -375px;            background-size: cover;
-  height: 375px;          z-index: 2;
-}
-
-#sell {
-  background: #aaa;    height: 375px;
-  position: relative;  top: -750px;
-}
-
-#sell-container {
-  position: relative;
-  float: right;
-
-}
-
-#sell h1 {
-  padding-top: 40px;      font-size: 36px;
-  color: white;           position: relative;
-
-}
-
-#sell p {
-  font-size: 20px;        width: 400px;
-  color: #fff;            position: relative;
-  top: 35px;
-}
-
-#sell a {
-  text-decoration: none;  font-weight: bold;
-  font-size: 20px;        position: relative;
-  top: 55px;              color: 	#111;
-}
-
-#sell a:hover {
-  color: #888;
-}
-
+  }
+  #sell p {
+    font-size: 20px;        width: 400px;
+    color: #fff;            position: relative;
+    top: 35px;
+  }
+  #sell a {
+    text-decoration: none;  font-weight: bold;
+    font-size: 20px;        position: relative;
+    top: 55px;              color: 	#111;
+  }
+  #sell a:hover {
+    color: #404040;
+    text-decoration: underline;
+  }
 /* End Buy-and-Sell */
-
 
 /* Start Slider-2 */
 
-#slider-2 {
-  position: absolute;
-  width: 100%;
-  top: 1670px;
-}
-
-#slider-2 h1 {
-  text-align: center;
-}
-
-#slider-2 .carousel {
-  border: 1px solid #111;
-  width: 100%;
-  height: 600px;
-  position: relative;
-  top: 43px;
-  background: #eee;
-}
+  #slider-2 {
+    position: absolute;
+    width: 100%;
+    top: 1670px;
+  }
+  #slider-2 h1 {
+    text-align: center;
+  }
+  #slider-2 .carousel {
+    border: 1px solid #111;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    top: 43px;
+    background: #eee;
+  }
 
 /* End Slider-2 */
 
 /* Start Footer */
 
-footer {
-  margin-top: 60px;
-  position: relative;
-  background: #111111;
-  padding-top: 40px;
-}
-
-#headings {
-  background: #222;
-  height: 80px;
-}
-
-footer:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-footer h1 {
-  color: #95c51b;
-  font-size: 24px;
-  display: inline;
-  float: left;
-  width: 23%;
-  margin-right: 2%;
-  position: relative;
-  top: 8px;
-}
-
-footer h1:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-footer ul {
-  margin-top: 37px;
-  float:left;
-  padding: 0;
-  list-style-type:none;
-  color: #fff;
-  width: 23%;
-  margin-right: 2%;
-  font-size: 18px;
-}
-
-footer li {
-  margin-bottom: 7px;
-}
-
-.margin-bottom-zero {
-  margin-bottom: 0;
-}
-
-footer a {
-  color: #fff;
-}
-
-footer a:hover {
-  color: #888;
-}
-
-footer #site-links:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-footer #copyright {
-  margin-top: 27px;
-  width: 100%;
-  color: #fff;
-  font-size: 18px;
-  background: black;
-  padding: 15px 0;
-}
+  footer {
+    margin-top: 60px;
+    position: relative;
+    background: #111111;
+    padding-top: 40px;
+  }
+  #headings {
+    background: #222;
+    height: 80px;
+  }
+  footer:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  footer h1 {
+    color: #95c51b;
+    font-size: 24px;
+    display: inline;
+    float: left;
+    width: 23%;
+    margin-right: 2%;
+    position: relative;
+    top: 8px;
+  }
+  footer h1:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  footer ul {
+    margin-top: 37px;
+    float:left;
+    padding: 0;
+    list-style-type:none;
+    color: #fff;
+    width: 23%;
+    margin-right: 2%;
+    font-size: 18px;
+  }
+  footer li {
+    margin-bottom: 7px;
+  }
+  .margin-bottom-zero {
+    margin-bottom: 0;
+  }
+  footer a {
+    color: #fff;
+  }
+  footer a:hover {
+    color: #ccc;
+  }
+  footer #site-links:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  footer #copyright {
+    margin-top: 27px;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: black;
+    padding: 15px 0;
+  }
 
 /* End Footer */
 
 /* Start Listings CSS */
 
-#map {
-  background-image: url(img/map.png);  background-repeat: no-repeat;
-  background-size: cover;             height: 540px;
-  width: 100%;
-  background-position: center;
-}
+  #map {
+    height: 400px;
+  }
+  main {
+    margin-top: 40px;
+  }
+  #listings-header {
+    display: inline;
+  }
+  .line {
+    width: 100%;
+    border-top: 1px solid #ddd;
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
 
-.listing {
-  border: 1px solid #2a5c37;
-  border-radius: 0 3px 3px 0;
-  margin-bottom: 30px;
-}
+  /* Start View Btns */
+    #view-btns {
+      color: #666;
+      position: relative;
+      float: right; /* --------------- FLOAT --------------- */
+    }
+    #view-btns:after { /*---------------float cleared-----*/
+      content: "";            clear: both;
+      display: block;
+    }
+    #view-btns #sort-by {
+      font-size: 18px;
+      border: 1px solid #888;
+      border-radius: 3px;
+      padding-right: 8px;
+      padding-left: 8px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      position: absolute;
+      left: -111px;
+      top: 4px;
+    }
+    #view-btns div {
+      font-size: 37px;
+      margin-left: 15px;
+    }
+    #view-btns .view-btn-active {
+      color: #2a5c37;
+    }
+  /* End View Btns */
 
-.listing h2 {
-  max-width: 290px;
-  font-size: 22px;
-  color: #111;
-  font-weight: bold;
-}
+  /* Start Listing */
+    .listing {
+      border: 1px solid #ddd;
+      border-radius: 0 3px 3px 0;
+      margin-bottom: 30px;
+    }
+    .listing h2 {
+      max-width: 290px;
+      font-size: 22px;
+      color: #111;
+      font-weight: bold;
+    }
+    .listing p {
+      font-size: 18px;
+      color: #666;
+      width: 100%;
+    }
+    .listing .price {
+      font-size: 22px;
+      color: #2a5c37;
+      font-weight: bold;
+    }
+    .listing .image {
+      border-right: 1px solid #ddd;
+      height: 255px;
+      width: 30%;
+      position: relative;
+      float: left; /*------------FLOAT-------------*/
+    }
+    .listing .intro {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 15px;
+      width: 70%;
+      position: relative;
+      float: left; /*------------FLOAT-------------*/
+    }
+    .listing .icons {
+      margin-left: 2px;
+      padding-top: 15px;
+    }
+    .icons .info {
+      position: relative;
+      float: left; /*-------------FLOAT----------*/
+      padding-left: 2px;
+      padding-right: 15px;
+      font-size: 18px;
+      color: #666;
+    }
+    .listing .icon {
+      position: relative;
+      float: left;
+    }
+    .icons .img {
+      background-repeat: no-repeat;
+      background-size: contain;
+      text-indent: -10000px;
+      position: relative;
+      float: left; /*-------------FLOAT----------*/
+    }
+    .bed-img {
+      background-image: url(img/bed.png);
+      width: 26px;
+    }
+    .bath-img {
+      background-image: url(img/bath.png);
+      width: 32px;
+      margin-top: 5px;
+    }
+    .area-img {
+      background-image: url(img/area.png);
+      width: 30px;
+    }
+    .listing button {
+      background: #2a5c37;
+      color: #fff;
+      border: 1px solid #111;
+      position: relative;
+      float: right;
+    }
+    .listing button:hover {
+      background: #21492c;
+    }
+    .listing:after { /*---------------float cleared-----*/
+      content: "";            clear: both;
+      display: block;
+    }
+    #img-1 {
+      background-image: url(img/house1.jpg);  background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #img-2 {
+      background-image: url(img/house2.jpg);  background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #img-3 {
+      background-image: url(img/house3.jpg);  background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #img-4 {
+      background-image: url(img/house4.jpg);  background-repeat: no-repeat;
+      background-size: cover;
+    }
+  /* End Listing */
 
-.listing p {
-  font-size: 18px;
-  color: #666;
-  width: 100%;
-}
-
-.listing .price {
-  font-size: 22px;
-  color: #2a5c37;
-  font-weight: bold;
-}
-
-.listing .image {
-  border-right: 1px solid #2a5c37;
-  height: 255px;
-  width: 30%;
-  position: relative;
-  float: left; /*------------FLOAT-------------*/
-}
-
-.listing .intro {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 15px;
-  width: 70%;
-  position: relative;
-  float: left; /*------------FLOAT-------------*/
-}
-
-.listing .icons {
-  margin-left: 2px;
-  padding-top: 15px;
-}
-
-.icons .info {
-  position: relative;
-  float: left; /*-------------FLOAT----------*/
-  padding-left: 2px;
-  padding-right: 5px;
-}
-
-.listing .icon {
-  position: relative;
-  float: left;
-
-}
-
-.icons .img {
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-indent: -10000px;
-  position: relative;
-  float: left; /*-------------FLOAT----------*/
-}
-
-.bed-img {
-  background-image: url(img/bed.png);
-  height: 20px;
-  width: 20px;
-}
-
-.bath-img {
-  background-image: url(img/bath.png);
-  height: 100%;
-  width: 25px;
-  margin-top: 4px;
-}
-
-.area-img {
-  background-image: url(img/area.png);
-  height: 100%;
-  width: 24px;
-}
-
-.listing button {
-  position: relative;
-  float: right;
-}
-
-
-
-.listing:after { /*---------------float cleared-----*/
-  content: "";            clear: both;
-  display: block;
-}
-
-#img-1 {
-  background-image: url(img/house1.jpg);  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#img-2 {
-  background-image: url(img/house2.jpg);  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#img-3 {
-  background-image: url(img/house3.jpg);  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#img-4 {
-  background-image: url(img/house4.jpg);  background-repeat: no-repeat;
-  background-size: cover;
-}
+  /* Start Page Btns*/
+    .page-btns div{
+      font-size: 22px;
+      position: relative;
+      float: left;
+      border-left: 1px solid #ddd;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    }
+    .page-btns .left, .page-btns .right {
+        margin-top: -1px;
+        padding: 15px 15px 14px 15px;
+        color: #ddd;
+    }
+    .page-btns .left {
+      border-radius: 3px 0 0 3px;
+    }
+    .page-btns .right {
+      border-radius: 0 3px 3px 0;
+      border-right: 1px solid #ddd;
+    }
+    .page-btns .page-btn {
+      color: #2a5c37;
+      padding: 10px 20px 10px 20px;
+    }
+    .page-btns .active-page {
+      background: #2a5c37;
+      color: #fff;
+    }
+    .page-btns div:hover {
+      background: #2a5c37;
+      color: #fff;
+    }
+    .page-btns:after { /*---------------float cleared-----*/
+      content: "";            clear: both;
+      display: block;
+    }
+  /* End Page Btns*/
 
 /* End Listings CSS */
 
 /* Media Queries (Add one for light-green-box --display none when screen size < 1180px)*/
+
+/* API Key
+
+AIzaSyD5tF-H5vA-iowgH9RIqUUtZPyuzzo2o-k
+
+*/
