@@ -8,14 +8,6 @@
     width: 100%;            max-width: 1180px;
     padding: 0 10px;        margin: 0 auto;
   }
-  h1.logo {
-    background-image: url(img/logo.png);  background-repeat: no-repeat;
-    background-size: contain;             height: 60px;
-    width: 259px;                         margin-top: 30px;
-    margin-bottom: 0px;                   padding-bottom: 0;
-    text-indent: -10000px;
-    float: left;
-  }
   main {
     margin-top: 40px;
   }
@@ -25,6 +17,14 @@
 /* Start Header */
   header {
     border-bottom: 1px solid #2a5c37;
+  }
+  h1.logo {
+    background-image: url(img/logo.png);  background-repeat: no-repeat;
+    background-size: contain;             height: 60px;
+    width: 259px;                         margin-top: 30px;
+    margin-bottom: 0px;                   padding-bottom: 0;
+    text-indent: -10000px;
+    float: left;
   }
   header .top-info {
     float: right;
@@ -65,23 +65,23 @@
   header nav li a:hover {
     color: #fff;            background-color: #2a5c37;
   }
-  .menu-active {
+  header .menu-active {
     color: #fff;            background-color: #2a5c37;
   }
-  #phone-green-box a{
+  header #phone-green-box a{
     color: #fff;            background-color: #95c51b;
     font-size: 20px;        padding: 10px 0px 6px 10px;
   }
-  .phone-icon {
+  header .phone-icon {
     font-size: 20px;        background: #95c51b;
     color: #fff;            padding: 10px 10px 6px 10px;
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
   }
-  .phone-icon:hover {
+  header .phone-icon:hover {
     background: #95c51b;
   }
-  #light-green-box {
+  header #light-green-box {
     padding: 0;             margin: 0;
     float: right;           background-color: #95c51b;
     height: 43px;           width: 50%;
@@ -92,21 +92,59 @@
 
 /* Start Home CSS */
 
-  /* Start Slider 1 */
-    #slider-1 {
+  /* Start office-img */
+    #office-img-section {
       width: 100%;            background: #46995c;
+      padding: 0 0 20px 0;    border-bottom: 1px solid #2a5c37;
     }
-    #slider-1 h2 {
-      margin: 0;              padding: 0 0 15px 0;
-      text-align: center;     color: white;
-      font-size: 16px;        font-weight: normal;
-    }
-    #scenery-carousel {
-      position: relative;     top: 50px;
-      background: #eee;       height: 400px;
+    #office-img-section #office-img {
+      background: #eee;
+      background-image: url(#);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: relative;
+      top: 40px;
+      width: 69%;
+      margin-right: 1%;
+      height: 400px;
       margin-bottom: 65px;
+      float: left;
     }
-  /* End Slider-1 */
+    #office-img-section #buy-sell-btns {
+      top: 40px;
+      position: relative;
+      float: right;
+      width: 29%; height: 400px;
+      margin-left: 1%;
+    }
+    #top-section, #middle-section, #bottom-section {
+      height: 33.33%;
+    }
+    #top-section div, #middle-section div{
+      margin: 0;            background: #2a5c37;
+      padding-top: 24px;    padding-bottom: 24px;
+      color: #fff;          font-size: 36px;
+      text-align: center;   border: 1px solid #111;
+      width: 100%;          border-radius: 20px;
+      box-shadow: #111 2px 3px 1px;
+    }
+    #top-section div:hover, #middle-section div:hover {
+      background: #21492c;
+      color: #eee;
+    }
+    #office-img-section h2 {
+      margin: 0;            padding: 0;
+      color: #fff;          text-shadow: #000 1px 2px 1px;
+      font-size: 22px;
+    }
+    #office-img-section a {
+      text-decoration: none;
+    }
+    #office-img-section:after {/*---------------float cleared-----*/
+        content: "";            clear: both;
+        display: block;
+    }
+  /* End office-img */
 
   /* Start Intro */
     #intro h1 {
@@ -114,7 +152,7 @@
       display: inline;        position: relative;
       top: 50px;
     }
-    .float-right {
+    #intro .float-right {
       float: right;           position: relative;
       display: inline;        top: -108px;
     }
@@ -133,93 +171,32 @@
       position: relative;     top: 80px;
       font-size: 20px;        color: #333;
     }
-    .margin-bottom {
+    #intro .margin-bottom {
       margin-bottom: 135px;
     }
   /* End Intro */
 
-  /* Start Buy-and-Sell */
-    #buy {
-      background: #95c51b;    height: 375px;
-    }
-    #buy h1 {
-      padding-top: 60px;      font-size: 36px;
-      color: white;
-    }
-    #buy p {
-      font-size: 20px;        width: 400px;
-      color: #fff;            position: relative;
-      top: 35px;
-    }
-    #buy a {
-      text-decoration: none;  font-weight: bold;
-      font-size: 20px;        position: relative;
-      top: 55px;              color: black;
-    }
-    #buy a:hover {
-      color: #404040;
-      text-decoration: underline;
-    }
-    #buy-pic {
-      position: relative;     background-image: url(img/1.jpg);
-      max-width: 50%;         background-repeat: no-repeat;
-      top: -375px;            background-size: cover;
-      height: 375px;          left:50%;
-    }
-    #sell-pic {
-      position: relative;     background-image: url(img/2.jpg);
-      max-width: 50%;         background-repeat: no-repeat;
-      top: -375px;            background-size: cover;
-      height: 375px;          z-index: 2;
-    }
-    #sell {
-      background: #aaa;    height: 375px;
-      position: relative;  top: -750px;
-    }
-    #sell-container {
+  /* Start Featured Homes */
+
+
+    #featured-homes .featured {
+      border: 1px solid black;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      height: 250px;
+      width: 30%;
       position: relative;
-      float: right;
-
+      float: left;
     }
-    #sell h1 {
-      padding-top: 40px;      font-size: 36px;
-      color: white;           position: relative;
-
+    #featured-homes #home-2, #featured-homes #home-5 {
+      margin-left: 5%;
+      margin-right: 5%;
     }
-    #sell p {
-      font-size: 20px;        width: 400px;
-      color: #fff;            position: relative;
-      top: 35px;
+    #featured-homes:after {/*---------------float cleared-----*/
+        content: "";            clear: both;
+        display: block;
     }
-    #sell a {
-      text-decoration: none;  font-weight: bold;
-      font-size: 20px;        position: relative;
-      top: 55px;              color: 	#111;
-    }
-    #sell a:hover {
-      color: #404040;
-      text-decoration: underline;
-    }
-  /* End Buy-and-Sell */
-
-  /* Start Slider-2 */
-    #slider-2 {
-      position: absolute;
-      width: 100%;
-      top: 1670px;
-    }
-    #slider-2 h1 {
-      text-align: center;
-    }
-    #slider-2 .carousel {
-      border: 1px solid #111;
-      width: 100%;
-      height: 600px;
-      position: relative;
-      top: 43px;
-      background: #eee;
-    }
-  /* End Slider-2 */
+  /* End Featured Homes */
 
 /* End Home CSS */
 
