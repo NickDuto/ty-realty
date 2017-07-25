@@ -95,7 +95,7 @@
   /* Start office-img */
     #office-img-section {
       width: 100%;            background: #46995c;
-      padding: 0 0 20px 0;
+      padding: 0 0 20px 0;    border-bottom: 1px solid #2a5c37;
     }
     #office-img-section #office-img {
       background: #eee;
@@ -125,7 +125,8 @@
       padding-top: 24px;    padding-bottom: 24px;
       color: #fff;          font-size: 36px;
       text-align: center;   border: 1px solid #111;
-      width: 100%;          border-radius: 10px;
+      width: 100%;          border-radius: 20px;
+      box-shadow: #111 2px 3px 1px;
     }
     #top-section div:hover, #middle-section div:hover {
       background: #21492c;
@@ -133,7 +134,7 @@
     }
     #office-img-section h2 {
       margin: 0;            padding: 0;
-      color: #fff;
+      color: #fff;          text-shadow: #000 1px 2px 1px;
       font-size: 22px;
     }
     #office-img-section a {
@@ -175,88 +176,27 @@
     }
   /* End Intro */
 
-  /* Start Buy-and-Sell */
-    #buy {
-      background: #95c51b;    height: 375px;
-    }
-    #buy h1 {
-      padding-top: 60px;      font-size: 36px;
-      color: white;
-    }
-    #buy p {
-      font-size: 20px;        width: 400px;
-      color: #fff;            position: relative;
-      top: 35px;
-    }
-    #buy a {
-      text-decoration: none;  font-weight: bold;
-      font-size: 20px;        position: relative;
-      top: 55px;              color: black;
-    }
-    #buy a:hover {
-      color: #404040;
-      text-decoration: underline;
-    }
-    #buy-pic {
-      position: relative;     background-image: url(img/1.jpg);
-      max-width: 50%;         background-repeat: no-repeat;
-      top: -375px;            background-size: cover;
-      height: 375px;          left:50%;
-    }
-    #sell-pic {
-      position: relative;     background-image: url(img/2.jpg);
-      max-width: 50%;         background-repeat: no-repeat;
-      top: -375px;            background-size: cover;
-      height: 375px;          z-index: 2;
-    }
-    #sell {
-      background: #aaa;    height: 375px;
-      position: relative;  top: -750px;
-    }
-    #sell-container {
+  /* Start Featured Homes */
+
+
+    #featured-homes .featured {
+      border: 1px solid black;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      height: 250px;
+      width: 30%;
       position: relative;
-      float: right;
-
+      float: left;
     }
-    #sell h1 {
-      padding-top: 40px;      font-size: 36px;
-      color: white;           position: relative;
-
+    #featured-homes #home-2, #featured-homes #home-5 {
+      margin-left: 5%;
+      margin-right: 5%;
     }
-    #sell p {
-      font-size: 20px;        width: 400px;
-      color: #fff;            position: relative;
-      top: 35px;
+    #featured-homes:after {/*---------------float cleared-----*/
+        content: "";            clear: both;
+        display: block;
     }
-    #sell a {
-      text-decoration: none;  font-weight: bold;
-      font-size: 20px;        position: relative;
-      top: 55px;              color: 	#111;
-    }
-    #sell a:hover {
-      color: #404040;
-      text-decoration: underline;
-    }
-  /* End Buy-and-Sell */
-
-  /* Start Slider-2 */
-    #slider-2 {
-      position: absolute;
-      width: 100%;
-      top: 1670px;
-    }
-    #slider-2 h1 {
-      text-align: center;
-    }
-    #slider-2 .carousel {
-      border: 1px solid #111;
-      width: 100%;
-      height: 600px;
-      position: relative;
-      top: 43px;
-      background: #eee;
-    }
-  /* End Slider-2 */
+  /* End Featured Homes */
 
 /* End Home CSS */
 
