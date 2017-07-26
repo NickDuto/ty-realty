@@ -19,9 +19,9 @@
     border-bottom: 1px solid #2a5c37;
   }
   h1.logo {
-    background-image: url(img/logo.png);  background-repeat: no-repeat;
-    background-size: contain;             height: 60px;
-    width: 259px;                         margin-top: 30px;
+    background-image: url(img/logo.jpg);  background-repeat: no-repeat;
+    background-size: contain;             height: 81px;
+    width: 300px;                         margin-top: 10px;
     margin-bottom: 0px;                   padding-bottom: 0;
     text-indent: -10000px;
     float: left;
@@ -233,6 +233,13 @@
       color: #666;
       position: relative;
       float: right; /* --------------- FLOAT --------------- */
+    }
+    #view-btns a {
+      color: #666;
+      text-decoration: none;
+    }
+    #view-btns a:hover {
+      color: #444;
     }
     #view-btns:after { /*---------------float cleared-----*/
       content: "";            clear: both;
