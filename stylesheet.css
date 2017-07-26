@@ -181,20 +181,28 @@
   /* End Intro */
 
   /* Start Featured Homes */
-
-
-    #featured-homes .featured {
-      border: 1px solid black;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      height: 250px;
-      width: 30%;
+    #featured-homes {
       position: relative;
-      float: left;
     }
-    #featured-homes #home-2, #featured-homes #home-5 {
-      margin-left: 5%;
-      margin-right: 5%;
+    #featured-homes h1 {
+
+    }
+    #featured-homes #view-all {
+      padding: 8px 8px 8px 12px;
+      border: 1px solid #111;
+      font-size: 16px;
+      color: #fff;
+      background: #2a5c37;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: -webkit-linear-gradient(#2a5c37, #21492c); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#2a5c37, #21492c); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#2a5c37, #21492c); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#2a5c37, #21492c); /* Standard syntax */
+    }
+    #featured-homes #view-all:hover {
+      background: #21492c;
     }
     #featured-homes:after {/*---------------float cleared-----*/
         content: "";            clear: both;
@@ -254,8 +262,24 @@
   /* Start Listing */
     .listing {
       border: 1px solid #ddd;
-      border-radius: 0 3px 3px 0;
       margin-bottom: 30px;
+    }
+    .listing-container:after {
+      content: "";            clear: both;
+      display: block;
+    }
+    .listing-row {
+      border-radius: 0 3px 3px 0;
+    }
+    .listing-grid {
+      width: 30%;
+      border-radius: 0 0 3px 3px;
+      position: relative;
+      float:left; /*-----------------------------------*/
+    }
+    #listing-2, #listing-5 {
+      margin-right: 5%;
+      margin-left: 5%;
     }
     .listing h2 {
       max-width: 290px;
@@ -264,9 +288,14 @@
       font-weight: bold;
     }
     .listing p {
-      font-size: 18px;
       color: #666;
       width: 100%;
+    }
+    .p-row {
+      font-size: 18px;
+    }
+    .p-grid {
+      font-size: 16px;
     }
     .listing .price {
       font-size: 22px;
@@ -274,23 +303,39 @@
       font-weight: bold;
     }
     .listing .image {
-      border-right: 1px solid #ddd;
       height: 255px;
-      width: 30%;
       position: relative;
-      float: left; /*------------FLOAT-------------*/
+    }
+    .listing .image-row {
+      width: 30%;
+      float: left;
+      border-right: 1px solid #ddd;
+    }
+    .listing .image-grid {
+      width: 100%;
+      float: none;
+      border-bottom: 1px solid #ddd;
     }
     .listing .intro {
       padding-left: 20px;
       padding-right: 20px;
       padding-bottom: 15px;
-      width: 70%;
       position: relative;
-      float: left; /*------------FLOAT-------------*/
+    }
+    .listing .intro-row {
+      width: 70%;
+      float: left;
+    }
+    .listing .intro-grid {
+      width: 100%;
+      float: none;
     }
     .listing .icons {
       margin-left: 2px;
       padding-top: 15px;
+    }
+    .icons-grid {
+      margin-bottom: 25px;
     }
     .icons .info {
       position: relative;
@@ -331,6 +376,9 @@
       position: relative;
       float: right;
     }
+    .listing .button-grid {
+      margin-top: -6px;
+    }
     .listing button:hover {
       background: #21492c;
     }
@@ -355,6 +403,12 @@
       background-size: cover;
     }
   /* End Listing */
+
+  /* Start Grid View */
+
+
+
+  /* Start Grid View */
 
   /* Start Page Btns*/
     .page-btns div{

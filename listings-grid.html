@@ -5,9 +5,9 @@
 <!--[if gte IE 9]><!--><html><!--<![endif]-->
   <head>
     <meta charset="UTF-8">
-    <title>T.Y. Realty Inc. | Home</title>
+    <title>T.Y. Realty Inc. | Listings</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <!--<link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css"> -->
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
 
@@ -35,8 +35,8 @@
         <nav>
           <h2>Main Navigation</h2>
           <ul>
-            <li ><a class="menu-active" href="index.html">Home</a></li>
-            <li><a href="listings-grid.html">Listings</a></li>
+            <li ><a href="index.html">Home</a></li>
+            <li><a class="menu-active" href="listings.html">Listings</a></li>
             <li><a href="">Home Search</a></li>
             <li><a href="">Resources</a></li>
             <li><a href="">About Us</a></li>
@@ -53,66 +53,26 @@
       <div id="light-green-box"></div>
     </header>
 
-    <!--Start Homepage Content-->
+    <!-- Start Listings Content-->
 
-    <section id="office-img-section">
+    <!-- Start Map-->
+    <div id="map"></div>
+    <!-- End Map-->
 
-      <div class="wrapper">
+    <!-- Start Main-->
 
-      <div id="office-img"></div>
+    <div class="wrapper">
 
-      <div id="buy-sell-btns">
-        <div id="top-section">
-          <a href="#"><div>Looking to Buy</div></a>
+      <main>
+        <h1 id="listings-header" class="inline">Active Listings</h1>
+        <div id="view-btns">
+          <span id="sort-by">Sort By&nbsp;
+            <span class="glyphicon glyphicon-menu-down"></span>
+          </span>
+          <div class="glyphicon glyphicon-th-list"></div>
+          <div class="view-btn-active glyphicon glyphicon-th"></div>
         </div>
-        <div id="middle-section">
-          <a href="#"><div>Looking to Sell</div></a>
-        </div>
-        <div id="bottom-section">
-          <h2>We have all the resources you need to buy or sell real estate in Lynchburg, Bedford and Campbell County</h2>
-        </div>
 
-      </div>
-
-      </div><!--WRAPPER-->
-    </section><!--office-img-section-->
-
-    <section id="intro">
-      <div class="wrapper">
-        <h1>Welcome to T.Y. Realty Inc.</h1>
-
-        <p>
-          Our office is located right in the heart of Forest and is a full service
-          real estate office. We share an office with T.Y. Mortgage LLC to bring you
-          a one stop shop convenience. We service Lynchburg, surrounding counties and
-          Smith Mountain Lake. If you are moving outside the area, we can also assist
-          you by connecting you with a reffered office outside the area.
-        </p>
-
-        <a href="#">
-          <div class="call button float-right">Give us a Call</div>
-          <img class="float-right" src="img/phone-2048157_1920.png" alt="Click to Call">
-        </a>
-
-        <a target="_blank" href="https://www.facebook.com/tyrealtyinc/">
-          <div class="fb button float-right">Like us on Facebook</div>
-          <img class="float-right" src="img/facebook-2048127_1920.png" alt="Like us on Facebook">
-        </a>
-
-        <p class="margin-bottom">
-          Call us today to see what we can do for you.
-        </p>
-
-      </div><!--WRAPPER-->
-    </section><!--INRO-->
-<div class="wrapper">
-    <section id="featured-homes">
-
-
-        <h1>Featured Homes</h1>
-        <a href="#"><span id="view-all">View all Listings
-          <span class="glyphicon glyphicon-menu-right"></span>
-        </span></a>
         <div class="line"></div>
 
         <section class="listing-container">
@@ -333,13 +293,28 @@
           </div><!-- Intro -->
         </article><!-- Listing -->
 
-    </section><!-- Listing container -->
+      </section><!-- Listing container -->
+        <div class="line"></div>
+
+        <div class="page-btns">
+
+          <div class="left glyphicon glyphicon-menu-left"></div>
+          <div class="active-page page-btn">1</div>
+          <div class="page-btn">2</div>
+          <div class="page-btn">3</div>
+          <div class="right glyphicon glyphicon-menu-right"></div>
+
+        </div>
+
+      </div>
+    </main>
 
 
-    </section>
-    </div><!-- wrapper -->
 
-    <!--End Homepage Content-->
+    <!-- End Main-->
+
+
+    <!-- End Listings Content-->
 
     <footer>
 
@@ -356,6 +331,7 @@
       <div class="wrapper">
 
         <section id="contact">
+
           <ul>
             <li>Teresa Khanna</li>
             <li class="margin-bottom-zero"><span class="glyphicon glyphicon-earphone"></span> Phone:</li>
@@ -363,7 +339,8 @@
             <li class="margin-bottom-zero"><span class="glyphicon glyphicon-envelope"></span> Email:</li>
             <li>tkrealestate@hotmail.com</li>
             <li class="margin-bottom-zero"><span class="glyphicon glyphicon-map-marker"></span> Location:</li>
-            <li class="margin-bottom-zero">T. Y. Realty Incorporated</li>            <li class="margin-bottom-zero">15115 Forest Road</li>
+            <li class="margin-bottom-zero">T. Y. Realty Incorporated</li>
+            <li class="margin-bottom-zero">15115 Forest Road</li>
             <li>Forest, VA 24551</li>
           </ul>
         </section><!--CONTACT-->
@@ -407,20 +384,27 @@
         </section><!--SITE-LINKS-->
       </div><!--WRAPPER-->
 
-      <section id="copyright">
+        <section id="copyright">
           <div class="wrapper">
 
           &copy;2017 T.Y. Realty Inc.
           </div>
         </section>
 
+
     </footer>
 
 
+    <script src="js/script.js" charset="utf-8"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5tF-H5vA-iowgH9RIqUUtZPyuzzo2o-k&callback=initMap">
+    </script>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js" type="text/javascript"></script>
-  <script src="js/bootstrap.min.js" type="text/javascript"></script>
-  <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.0.0.min.js"></script>
   <!-- Latest compiled and minified CSS -->
   </body>
 </html>
