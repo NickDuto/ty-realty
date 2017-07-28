@@ -373,16 +373,16 @@
       float: left; /*-------------FLOAT----------*/
     }
     .bed-img {
-      background-image: url(img/bed.png);
+      background-image: url(img/icons/bed.png);
       width: 26px;
     }
     .bath-img {
-      background-image: url(img/bath.png);
+      background-image: url(img/icons/bath.png);
       width: 32px;
       margin-top: 5px;
     }
     .area-img {
-      background-image: url(img/area.png);
+      background-image: url(img/icons/area.png);
       width: 30px;
     }
     .listing button {
