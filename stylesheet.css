@@ -482,7 +482,7 @@
     font-weight: bold;
     color: #000;
     bottom: 25px;
-    background: rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.9);
     padding: 15px;
   }
 /* End Banner CSS */
@@ -528,18 +528,17 @@
     }
     #buy-content p{
       color: #666;
-      font-size: 18px;
+      font-size: 20px;
     }
-    #buy-content ul {
-      font-size: 18px;
-      list-style: none;
-      padding: 0;
+    #buy-content h3 {
+      color: #222;
     }
+
 
     /* Start Section 1 */
       #buy-content .section-1 {
         position: relative;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
       }
       #buy-content .section-1 img {
         height: 300px;
@@ -571,7 +570,6 @@
     /* End Section 1 */
 
     /* Start Section 2 */
-
       #buy-content .section-1 article, #buy-content .section-2 article, #buy-content .section-3 article {
         box-shadow: #ccc 1px 1px 1px 1px;
         background: #f8f8f8;
@@ -582,12 +580,54 @@
       #buy-content .section-2 article h2, #buy-content .section-3 article h2 {
         font-size: 26px;
       }
-
+      #buy-content .list {
+        font-size: 18px;
+        list-style: none;
+        padding: 0;
+      }
+      #buy-content .list .item {
+        position: relative;
+      }
+      #buy-content .list p {
+        position: relative;
+        left: 30px;
+        margin-top: 20px;
+        padding-right: 60px;
+      }
+      #buy-content .list .checkmark {
+        background-image: url(img/checkmark.png);  background-repeat: no-repeat;
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+      }
     /* End Section 2 */
 
+    /* Start Section 3 */
       #buy-content .section-3 {
-
+        position: relative;
+        margin-top: 20px;
       }
+      #buy-content .section-3 article {
+        position: relative;
+        float: left;
+        width: 70%;
+      }
+      #buy-content .section-3:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      #buy-content .section-3 img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 380px;
+      }
+      #buy-content .section-3 article p {
+        max-width: 71.42%;
+      }
+    /* End Section 3 */
 
   /* End Buy Content */
 
