@@ -514,18 +514,18 @@
     aside {
       float: right;
       position: relative;
-      width: 26%;
-      background: #f2f2f8;
-      margin-left: 4%;
+      width: 28%;
+      margin-top: 20px;
+      margin-left: 2%;
       height: 1000px;
+      box-shadow: #ccc 1px 1px 1px 1px;
+      background: #f8f8f8;
     }
     main:after {
       content: "";
       clear: both;
       display: block;
     }
-
-
     #buy-content p{
       color: #666;
       font-size: 18px;
@@ -572,8 +572,8 @@
 
     /* Start Section 2 */
 
-      #buy-content .section-2 article, #buy-content .section-3 article {
-
+      #buy-content .section-1 article, #buy-content .section-2 article, #buy-content .section-3 article {
+        box-shadow: #ccc 1px 1px 1px 1px;
         background: #f8f8f8;
         padding: 20px 40px 20px 40px;
         margin-top: 20px;
