@@ -515,7 +515,7 @@
       float: right;
       position: relative;
       width: 26%;
-      background: #eee;
+      background: #f2f2f8;
       margin-left: 4%;
       height: 1000px;
     }
@@ -528,48 +528,66 @@
 
     #buy-content p{
       color: #666;
-      font-size: 20px;
+      font-size: 18px;
     }
     #buy-content ul {
-      font-size: 20px;
+      font-size: 18px;
       list-style: none;
       padding: 0;
     }
 
     /* Start Section 1 */
+      #buy-content .section-1 {
+        position: relative;
+        margin-bottom: 40px;
+      }
       #buy-content .section-1 img {
-        height: 200px;
+        height: 300px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
       }
       #buy-content .section-1 article {
         position: relative;
-        float: right;
+        float: left;
         width: 70%;
       }
       #buy-content .section-1 article h2 {
-        text-align: right;
+        font-weight: bold;
         margin-bottom: 20px;
+        text-transform: capitalize;
       }
       #buy-content .section-1 article p{
         max-width: 71.42%;
         position: relative;
-        float: right;
+        text-align: justify;
+        float: left;
+      }
+      #buy-content .section-1:after {
+        content: "";
+        display: block;
+        clear: both;
       }
     /* End Section 1 */
 
     /* Start Section 2 */
 
-      #buy-content .section-2 .left-container{
-        position: relative;
-        float: left;
-        width: 50%;
+      #buy-content .section-2 article, #buy-content .section-3 article {
+
+        background: #f8f8f8;
+        padding: 20px 40px 20px 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
-      #buy-content .section-2 .right-container{
-        position: relative;
-        float: left;
-        width: 50%;
+      #buy-content .section-2 article h2, #buy-content .section-3 article h2 {
+        font-size: 26px;
       }
 
     /* End Section 2 */
+
+      #buy-content .section-3 {
+
+      }
 
   /* End Buy Content */
 
