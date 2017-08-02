@@ -269,91 +269,92 @@
   /* End View Btns */
 
   /* Start Listing */
-    .listing {
+    #listings-content .listing {
       border: 1px solid #ddd;
       margin-bottom: 30px;
       box-shadow: none;
       background: linear-gradient(#fff, #fefefe); /* Standard syntax */
     }
-    .listing:hover {
+    #listings-content .listing:hover {
       box-shadow: #cacaca 2px 2px 1px;
       background: #fefefe;
       cursor: pointer;
     }
-    .listing-container:after {
+    #listings-content .listing-container:after {
       content: "";            clear: both;
       display: block;
     }
-    .listing-row {
+    #listings-content .listing-row {
       border-radius: 0 3px 3px 0;
     }
-    .listing-grid {
+    #listings-content .listing-grid {
       width: 30%;
       border-radius: 0 0 3px 3px;
       position: relative;
       float:left; /*-----------------------------------*/
     }
-    #listing-2, #listing-5 {
+    #listings-content #listing-2,
+    #listings-content #listing-5 {
       margin-right: 5%;
       margin-left: 5%;
     }
-    .listing h2 {
+    #listings-content .listing h2 {
       max-width: 290px;
       font-size: 22px;
       color: #111;
       font-weight: bold;
     }
-    .listing p {
+    #listings-content .listing p {
       color: #666;
       width: 100%;
     }
-    .p-row {
+    #listings-content .p-row {
       font-size: 18px;
     }
-    .p-grid {
+    #listings-content .p-grid {
       font-size: 16px;
     }
-    .listing .price {
+    #listings-content .listing .price {
       font-size: 22px;
       color: #2a5c37;
       font-weight: bold;
     }
-    .listing .image {
+    #listings-content .listing .image {
       height: 255px;
       position: relative;
     }
-    .listing .image-row {
+    #listings-content .listing .image-row {
       width: 30%;
       float: left;
       border-right: 1px solid #ddd;
     }
-    .listing .image-grid {
+    #listings-content .listing .image-grid {
       width: 100%;
       float: none;
       border-bottom: 1px solid #ddd;
     }
-    .listing .intro {
+    #listings-content .listing .intro {
       padding-left: 20px;
       padding-right: 20px;
       padding-bottom: 15px;
       position: relative;
     }
-    .listing .intro-row {
+    #listings-content .listing .intro-row {
       width: 70%;
       float: left;
     }
-    .listing .intro-grid {
+    #listings-content .listing .intro-grid {
       width: 100%;
       float: none;
     }
-    .listing .icons {
+    #listings-content .listing .icons {
       margin-left: 2px;
       padding-top: 15px;
     }
-    .icons-grid {
+    #listings-content .icons-grid {
       margin-bottom: 25px;
     }
-    .icons .info {
+    #listings-content .icons .info {
       position: relative;
       float: left; /*-------------FLOAT----------*/
       padding-left: 2px;
@@ -361,44 +362,44 @@
       font-size: 18px;
       color: #666;
     }
-    .listing .icon {
+    #listings-content .listing .icon {
       position: relative;
       float: left;
     }
-    .icons .img {
+    #listings-content .icons .img {
       background-repeat: no-repeat;
       background-size: contain;
       text-indent: -10000px;
       position: relative;
       float: left; /*-------------FLOAT----------*/
     }
-    .bed-img {
+    #listings-content .bed-img {
       background-image: url(img/icons/bed.png);
       width: 26px;
     }
-    .bath-img {
+    #listings-content .bath-img {
       background-image: url(img/icons/bath.png);
       width: 32px;
       margin-top: 5px;
     }
-    .area-img {
+    #listings-content .area-img {
       background-image: url(img/icons/area.png);
       width: 30px;
     }
-    .listing button {
+    #listings-content .listing button {
       background: #2a5c37;
       color: #fff;
       border: 1px solid #111;
       position: relative;
       float: right;
     }
-    .listing .button-grid {
+    #listings-content .listing .button-grid {
       margin-top: -6px;
     }
-    .listing button:hover {
+    #listings-content .listing button:hover {
       background: #21492c;
     }
-    .listing:after { /*---------------float cleared-----*/
+    #listings-content .listing:after {
       content: "";            clear: both;
       display: block;
     }
@@ -497,9 +498,6 @@
 
   /* Start Buy Content */
 
-    #buy-content {
-
-    }
     .content-container {
       position: relative;
       float: left;
@@ -511,16 +509,176 @@
       clear: both;
       display: block;
     }
-    aside {
-      float: right;
-      position: relative;
-      width: 28%;
-      margin-top: 20px;
-      margin-left: 2%;
-      height: 1000px;
-      box-shadow: #ccc 1px 1px 1px 1px;
-      background: #f8f8f8;
-    }
+
+    /* Start Sidebar */
+      aside {
+        float: right;
+        position: relative;
+        width: 28%;
+        margin-top: 20px;
+        margin-left: 2%;
+        height: 1000px;
+      }
+      aside img {
+        width: 80px;
+        height: 70px;
+        float: left;
+        position: relative;
+      }
+      aside a {color: #444;}
+      aside a:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      aside a:hover {color: #888;}
+      aside .button {
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 10px;
+        margin-top: 10px;
+        float: left;
+        position: relative;
+      }
+
+      aside .fb {width: 100px;}
+      aside .call {width: 82px;}
+
+      aside p {
+        position: relative;     top: 80px;
+        font-size: 20px;        color: #333;
+      }
+      aside section {
+        width: 100%;
+        box-shadow: #ccc 1px 1px 1px 1px;
+        background: #eee;
+        padding: 20px;
+        margin-bottom: 1px;
+      }
+      aside h2 {
+        font-size: 26px;
+        margin: 0;
+        font-weight: bold;
+      }
+      aside input {
+        margin-top: 15px;
+        width: 100%;
+        height: 40px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 18px;
+      }
+      aside .submit {
+        background: #2a5c37;
+        color: #fff;
+        text-transform: uppercase;
+      }
+      /* Start Sidebar Listing */
+        aside .listing {
+          margin-bottom: 20px;
+          background: #fff;
+          border: 1px solid #ddd;
+        }
+        aside .listing:hover {
+          box-shadow: #cacaca 2px 2px 1px;
+          background: #fefefe;
+          cursor: pointer;
+        }
+        aside .listing-grid {
+          width: 100%;
+          border-radius: 0 0 3px 3px;
+        }
+        aside .listing h2 {
+          font-size: 20px;
+          color: #111;
+          font-weight: bold;
+        }
+        aside .listing p {
+          color: #666;
+          font-size: 16px !important;
+        }
+        aside .listing .price {
+          font-size: 20px;
+          color: #2a5c37;
+          font-weight: bold;
+        }
+        aside .listing .image {
+          height: 200px;
+          border-bottom: 1px solid #ddd;
+        }
+        #listings-content .listing .intro {
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-bottom: 15px;
+          position: relative;
+        }
+        #listings-content .listing .intro-row {
+          width: 70%;
+          float: left;
+        }
+        #listings-content .listing .intro-grid {
+          width: 100%;
+          float: none;
+        }
+        #listings-content .listing .icons {
+          margin-left: 2px;
+          padding-top: 15px;
+        }
+        #listings-content .icons-grid {
+          margin-bottom: 25px;
+        }
+        #listings-content .icons .info {
+          position: relative;
+          float: left; /*-------------FLOAT----------*/
+          padding-left: 2px;
+          padding-right: 15px;
+          font-size: 18px;
+          color: #666;
+        }
+        #listings-content .listing .icon {
+          position: relative;
+          float: left;
+        }
+        #listings-content .icons .img {
+          background-repeat: no-repeat;
+          background-size: contain;
+          text-indent: -10000px;
+          position: relative;
+          float: left; /*-------------FLOAT----------*/
+        }
+        #listings-content .bed-img {
+          background-image: url(img/icons/bed.png);
+          width: 26px;
+        }
+        #listings-content .bath-img {
+          background-image: url(img/icons/bath.png);
+          width: 32px;
+          margin-top: 5px;
+        }
+        #listings-content .area-img {
+          background-image: url(img/icons/area.png);
+          width: 30px;
+        }
+        #listings-content .listing button {
+          background: #2a5c37;
+          color: #fff;
+          border: 1px solid #111;
+          position: relative;
+          float: right;
+        }
+        #listings-content .listing .button-grid {
+          margin-top: -6px;
+        }
+        #listings-content .listing button:hover {
+          background: #21492c;
+        }
+        #listings-content .listing:after {
+          content: "";            clear: both;
+          display: block;
+        }
+
+      /* End Sidebar Article */
+    /* End Sidebar */
     main:after {
       content: "";
       clear: both;
@@ -570,12 +728,18 @@
     /* End Section 1 */
 
     /* Start Section 2 */
-      #buy-content .section-1 article, #buy-content .section-2 article, #buy-content .section-3 article {
+      #buy-content .section-1 article,
+      #buy-content .section-2 article,
+      #buy-content .section-3 article {
         box-shadow: #ccc 1px 1px 1px 1px;
-        background: #f8f8f8;
+        background: #eee;
         padding: 20px 40px 20px 40px;
         margin-top: 20px;
         margin-bottom: 20px;
+      }
+
+      #buy-content .section-2 article {
+        margin-bottom: 40px;
       }
       #buy-content .section-2 article h2, #buy-content .section-3 article h2 {
         font-size: 26px;
@@ -593,6 +757,7 @@
         left: 30px;
         margin-top: 20px;
         padding-right: 60px;
+
       }
       #buy-content .list .checkmark {
         background-image: url(img/checkmark.png);  background-repeat: no-repeat;
@@ -606,12 +771,12 @@
     /* Start Section 3 */
       #buy-content .section-3 {
         position: relative;
-        margin-top: 20px;
       }
       #buy-content .section-3 article {
         position: relative;
         float: left;
         width: 70%;
+        margin-top: 0;
       }
       #buy-content .section-3:after {
         content: "";
