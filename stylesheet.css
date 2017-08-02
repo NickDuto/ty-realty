@@ -732,7 +732,7 @@
       #buy-content .section-2 article,
       #buy-content .section-3 article {
         box-shadow: #ccc 1px 1px 1px 1px;
-        background: #eee;
+        background: #eee; /*test*/
         padding: 20px 40px 20px 40px;
         margin-top: 20px;
         margin-bottom: 20px;
