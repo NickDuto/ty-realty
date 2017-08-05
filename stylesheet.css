@@ -512,175 +512,109 @@
     }
 
     /* Start Sidebar */
-      aside {
+      #sidebar {
         float: right;
         position: relative;
         width: 28%;
         margin-left: 2%;
-
       }
-
-      aside img {
-        width: 80px;
-        height: 70px;
-        float: left;
+      #sidebar section {
         position: relative;
-      }
-      aside a {color: #444;}
-      aside a:after {
-        content: "";
-        display: block;
-        clear: both;
-      }
-      aside a:hover {color: #888;}
-      aside .button {
-        font-size: 16px;
-        font-weight: bold;
-        padding-left: 10px;
-        margin-top: 10px;
-        float: left;
-        position: relative;
-      }
-
-      aside .fb {width: 100px;}
-      aside .call {width: 82px;}
-
-      aside p {
-        position: relative;     top: 80px;
-        font-size: 20px;        color: #333;
-      }
-      aside section {
         width: 100%;
         box-shadow: #ccc 1px 1px 1px 1px;
         background: #eee;
         padding: 20px;
         margin-bottom: 1px;
       }
-      aside h2 {
+      #sidebar .icon {
+        width: 65px;
+        float: left;
+        position: relative;
+      }
+      #sidebar a {
+        float: left;
+        color: #444;
+      }
+      #sidebar section:nth-child(3):after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      #sidebar h4 {
+        color: #444;
+      }
+      #sidebar a:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      #sidebar a:hover {color: #888;}
+      #sidebar .button {
+        font-size: 15px;
+        font-weight: bold;
+        padding-left: 5px;
+        margin-top: 10px;
+        float: left;
+        position: relative;
+      }
+
+      #sidebar .fb {
+        width: 78px;
+      }
+      #sidebar .call {
+        width: 68px;
+      }
+      #sidebar a:nth-child(odd) {
+        float: left;
+      }
+      #sidebar a:nth-child(even) {
+        float: right;
+      }
+      #sidebar #teresa {
+        width: 65%;
+        position: relative;
+        border: 1px solid #666;
+        border-radius: 3px;
+      }
+      #sidebar p {
+        position: relative;
+
+        font-size: 16px !important;
+        color: #333;
+
+        text-align: justify;
+      }
+      #sidebar section {
+
+      }
+      #sidebar h2 {
         font-size: 26px;
         margin: 0;
         font-weight: bold;
       }
-      aside input {
+      #sidebar input, #sidebar textarea{
         margin-top: 15px;
         width: 100%;
         height: 40px;
         border: 1px solid #ccc;
         border-radius: 5px;
         font-size: 18px;
+        box-sizing: border-box;
+        padding-left: 10px;
       }
-      aside .submit {
+      textarea {
+        padding-top: 5px;
+        resize: vertical;
+        min-height: 150px;
+      }
+      #sidebar .submit {
         background: #2a5c37;
         color: #fff;
         text-transform: uppercase;
       }
-      /* Start Sidebar Listing */
-        aside .listing {
-          margin-bottom: 20px;
-          background: #fff;
-          border: 1px solid #ddd;
-        }
-        aside .listing:hover {
-          box-shadow: #cacaca 2px 2px 1px;
-          background: #fefefe;
-          cursor: pointer;
-        }
-        aside .listing-grid {
-          width: 100%;
-          border-radius: 0 0 3px 3px;
-        }
-        aside .listing h2 {
-          font-size: 20px;
-          color: #111;
-          font-weight: bold;
-        }
-        aside .listing p {
-          color: #666;
-          font-size: 16px !important;
-        }
-        aside .listing .price {
-          font-size: 20px;
-          color: #2a5c37;
-          font-weight: bold;
-        }
-        aside .listing .image {
-          height: 200px;
-          border-bottom: 1px solid #ddd;
-        }
-        #listings-content .listing .intro {
-          padding-left: 20px;
-          padding-right: 20px;
-          padding-bottom: 15px;
-          position: relative;
-        }
-        #listings-content .listing .intro-row {
-          width: 70%;
-          float: left;
-        }
-        #listings-content .listing .intro-grid {
-          width: 100%;
-          float: none;
-        }
-        #listings-content .listing .icons {
-          margin-left: 2px;
-          padding-top: 15px;
-        }
-        #listings-content .icons-grid {
-          margin-bottom: 25px;
-        }
-        #listings-content .icons .info {
-          position: relative;
-          float: left; /*-------------FLOAT----------*/
-          padding-left: 2px;
-          padding-right: 15px;
-          font-size: 18px;
-          color: #666;
-        }
-        #listings-content .listing .icon {
-          position: relative;
-          float: left;
-        }
-        #listings-content .icons .img {
-          background-repeat: no-repeat;
-          background-size: contain;
-          text-indent: -10000px;
-          position: relative;
-          float: left; /*-------------FLOAT----------*/
-        }
-        #listings-content .bed-img {
-          background-image: url(img/icons/bed.png);
-          width: 26px;
-        }
-        #listings-content .bath-img {
-          background-image: url(img/icons/bath.png);
-          width: 32px;
-          margin-top: 5px;
-        }
-        #listings-content .area-img {
-          background-image: url(img/icons/area.png);
-          width: 30px;
-        }
-        #listings-content .listing button {
-          background: #2a5c37;
-          color: #fff;
-          border: 1px solid #111;
-          position: relative;
-          float: right;
-        }
-        #listings-content .listing .button-grid {
-          margin-top: -6px;
-        }
-        #listings-content .listing button:hover {
-          background: #21492c;
-        }
-        #listings-content .listing:after {
-          content: "";            clear: both;
-          display: block;
-        }
-
-      /* End Sidebar Article */
     /* End Sidebar */
-    #buy-content {
+    #buy-content,
+    #sell-content {
       margin-top: 40px;
     }
     main:after {
@@ -688,17 +622,25 @@
       clear: both;
       display: block;
     }
-    #buy-content p{
+    #buy-content p,
+    #sell-content p{
       color: #666;
       font-size: 20px;
     }
-    #buy-content h3 {
+
+    #buy-content h3,
+    #sell-content h3  {
       color: #222;
       font-size: 20px;
     }
+
     #buy-content .section-1 article,
     #buy-content .section-2 article,
-    #buy-content .section-3 article {
+    #buy-content .section-3 article,
+    #sell-content .section-1 article,
+    #sell-content .section-2 article,
+    #sell-content .section-3 article,
+    #sell-content .section-4 article {
       box-shadow: #ccc 1px 1px 1px 1px;
       background: #eee; /*test*/
       padding: 20px 40px 20px 40px;
@@ -708,7 +650,8 @@
 
 
     /* Start Section 1 */
-      #buy-content .section-1 {
+      #buy-content .section-1,
+      #sell-content .section-1  {
         position: relative;
       }
       #buy-content .section-1 img {
@@ -746,7 +689,8 @@
       #buy-content .section-2 article {
         position: relative;
       }
-      #buy-content .section-2 article:after {
+      #buy-content .section-2 article:after,
+      #sell-content .section-2 article:after {
         content: "";
         display: block;
         clear: both;
@@ -756,35 +700,42 @@
         font-size: 22px;
         margin-bottom: 30px;
       }
-      #buy-content .section-2 .list .item {
-        width: 48%;
+      #buy-content .section-2 .list .item,
+      #sell-content .section-2 .list .item {
+        width: 49%;
       }
 
-      #buy-content .section-2 .list .item:nth-child(odd) {
+      #buy-content .section-2 .list .item:nth-child(odd),
+      #sell-content .section-2 .list .item:nth-child(odd) {
         float:left;
       }
-      #buy-content .section-2 .list .item:nth-child(even) {
+      #buy-content .section-2 .list .item:nth-child(even),
+      #sell-content .section-2 .list .item:nth-child(even) {
         float: right;
       }
-      #buy-content .list {
+      #buy-content .list,
+      #sell-content .list, {
         font-size: 18px;
         list-style: none;
         padding: 0;
       }
-      #buy-content .list .item {
+      #buy-content .list .item,
+      #sell-content .list .item  {
         position: relative;
       }
-      #buy-content .list p {
+      #buy-content .list p,
+      #sell-content .list p {
         position: relative;
         left: 30px;
-
         padding-right: 60px;
         font-size: 18px;
+
       }
       #buy-content .section-3 .list p {
         margin-top: 20px;
       }
-      #buy-content .list .checkmark {
+      #buy-content .list .checkmark,
+      #sell-content .list .checkmark  {
         background-image: url(img/checkmark.png);  background-repeat: no-repeat;
         background-size: contain;
         width: 30px;
